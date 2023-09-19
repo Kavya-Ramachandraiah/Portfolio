@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">PORT<span class="logo-span">FOLIO</span> </a>
+      <nav class="navbar">
+        <a href="#home"> Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Services</a>
+        <a href="#skills-sec">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#Footer-sec">Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hey!!, It's Me</h3>
+        <h1>Kavya Ramachandraiah</h1>
+        <h3>I am a Candid Person</h3>
+        <p>
+          I am a Software Enthusiast, passionate about Web Designing.
+          <br />Good in analysing data and Seeking to grab good oppurtunity <br /> to appeal my skills and be responsible to keep my teams flag high 
+        </p>
+        <!-- <img class="home-content-img" src="img/portfolio img.jpeg" alt="" /> -->
+
+        <div class="home-sci">
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#https://www.linkedin.com/in/kavya-ramachandraiah-5648a323b"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a href="https://drive.google.com/file/d/1fm5tNcmmBWsa2BDY25jSXWICpgIOpX-Q/view?usp=drivesdk" class="btn-box">Download Resume</a>
+      </div>
+      <div class="home-img">
+        <img  class="home-image" src="img/img-1.jpeg" alt="image-part">
+      </div>
+    </section>
+
+    <!-- about us section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img class="about-image" src="img/img-2.jpeg" alt="image part" />
+      </div>
+      <!-- <div class="about-img"> -->
+      <!-- <img src="img/portfolio img.jpeg" alt="" /> -->
+      <!-- </div> -->
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <p>
+          A self motivated and hard working individual with a great passion for
+          Web Development on a whole a Software developer. I am responsible and
+          collaborate seamlessly in a teamwork environment to achieve success. I
+          have undergone a internship for 3 months, in creating a
+          responsive,creative and interative website. I am as Keen as Mustard in
+          taking responsibility, co-ordinate as a volunteer or lead a
+          team.Looking for a full-time position in the Industry in which I can
+          put into my knowledge and bring out pratical result, ultimately
+          benefiting the organisation.
+        </p>
+        
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Education')">EDUCATION </p>
+          <p class="tab-links " onclick="opentab('Certification')">CERTIFICATE</p>
+       </div>
+       <div class="tab-contents active-tab" id="Education">
+        <ul>
+          <li><span>2023</span><br>B.E in Dr.Ambedkar Institute of Technology</li>
+          <li><span>2019</span><br>PUC(12th) in ASC Independent pu College</li>
+          <li><span>2017</span><br>SSLC(10th) in Embassy Public School</li>
+        </ul>
+       </div>
+       <div class="tab-contents " id="Certification">
+        <ul>
+          <li> <span>Aug 2023</span><br> Google Data Analytics-from grow with google program-from Coursera</li>
+          <li> <span>Mar 2023 - Jun 2023</span><br> Web Development internship at Beyonders</li>
+        </ul>
+       </div>
+      </div>
+      <script> 
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add('active-tab');
+
+        }
+      </script>
+    </section>
+
+    <section>
+      <div class="projects" id="projects">
+        <div class="container">
+          <h1 class="sub-title">My <span> Services</span></h1>
+          <div class="project-list">
+            <div>
+              <h2>Web Designing</h2>
+              <p>
+                Got an oppurtunity through the internship to develop a website.
+                By enhancing my skills and making my mistakes my best teacher I
+                developed this
+                <span project-1> Hotel management website</span> . it was great
+                doing this project
+              </p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+            <div>
+              <h2>Data Analytics</h2>
+              <p>
+                I have been certified as a Data Analysts from Google with the
+                courses in the Coursera by Grow with Google platform.I gained
+                good knowledge from the course, which aquired my passion to
+                become a data analyst.
+              </p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+            <div>
+              <h2>Java Developer</h2>
+              <p>
+                I have gained knowledge in Java with the help of the course
+                taken in Ethnus.Done multiple program trials and errors and
+                wangled around with Java
+              </p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+    <section class="skills-sec" id="skills-sec">
+      <h1 class="sub-title">My <span>Skills</span></h1>
+      <div class="container1" id="skills">
+        <div class="technical-skills">
+          <h1 class="heading1">Technical Skills</h1>
+
+          <h2 class="skill-title">HTML</h2>
+          <div class="container-bar">
+            <div class="skills html">90%</div>
+          </div>
+
+          <h2 class="skill-title">CSS</h2>
+          <div class="container-bar">
+            <div class="skills css">80%</div>
+          </div>
+
+          <h2 class="skill-title">Java</h2>
+          <div class="container-bar">
+            <div class="skills java">70%</div>
+          </div>
+        </div>
+
+        <div class="technical-skills-2">
+          <h2 class="skill-title">C/C++</h2>
+          <div class="container-bar">
+            <div class="skills cpp">70%</div>
+          </div>
+
+          <h2 class="skill-title">SQL</h2>
+          <div class="container-bar">
+            <div class="skills sql">75%</div>
+          </div>
+
+          <h2 class="skill-title">Microsft-Excel</h2>
+          <div class="container-bar">
+            <div class="skills excel">80%</div>
+          </div>
+        </div>
+
+        <div class="professional-skills">
+          <h1 class="heading1">Professional Skills</h1>
+
+          <h2 class="skill-title">Creativity</h2>
+          <div class="container-bar">
+            <div class="skills creativity">80%</div>
+          </div>
+
+          <h2 class="skill-title">Communication</h2>
+          <div class="container-bar">
+            <div class="skills communication">90%</div>
+          </div>
+
+          <h2 class="skill-title">Problem-Solving</h2>
+          <div class="container-bar">
+            <div class="skills Problem-Solving">80%</div>
+          </div>
+
+          <h2 class="skill-title">Team Work</h2>
+          <div class="container-bar">
+            <div class="skills team-work">85%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio project" id="portfolio">
+        <h5 class="project-title"> My <span> Projects</span></h5> 
+      
+        <div class="project-sec">
+          <div class="container-2">
+        
+            <img src="img/img3.JPG"  class="projects-1" id="pjimg">
+            <div class="overlay">
+              <div class="text project-1-expo"><p class="overlay-text"><span>Shop manegment</span> website created by me as a minor project during my Internship. This was great challenge as it was my first trial in pratical application of front-end-development part. There was lot that I learnt</p></div>
+            </div>
+          </div>
+           
+          <div class="container-2">
+            <img src="img/img4.JPG"  class="projects-2 " id="pjimg">
+            <div class="overlay">
+              <div class="text project-2-expo"> <p class="overlay-text"> <span>Hotel Booking.</span> This was another challenge given to me during my internship. I used current technologies and design trends to complete the web.Optimised content for mobile and cross browser performance. The website was deplyoed by me using Netlify <br> <a href="http://honeycomb_15.netlify.app/" target="_blank" class="project-link">Click here </a>to have a look at the website </p></div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <section class="Footer-sec" id="Footer-sec">
+      <h1 class="contact-footer">Contact <span class="contact-footer-span">Me</span> </h1>
+      <div class="footer-div">
+
+        <div class="get-in-touch-col">
+          <h5 class="get-in-touch-heading">Get in Touch<i class='bx bxs-chevrons-down footer-icons'></i></h5>
+          <p class="footer-in-touch-para"> <i class='bx bxs-user footer-icons'></i> <span class="footer-heading-1"> Name</span> <br><span class="footer-info">Kavya</span><br> <i class='bx bxs-location-plus footer-icons'></i><span class="footer-heading-1"> Address</span><br> <span class="footer-info">Bangalore,Karnataka,India</span><br>  <i class='bx bxs-envelope footer-icons' ></i> <span class="footer-heading-1">Email</span><br>  <span class="footer-info">kavyart2001@gmail.com</span><br></p>
+        </div>
+
+        <div class="button-col">
+          <h6 class="button-heading">Message me</h6>
+          <form >
+            <input type="text" placeholder="Name" class="form-button"> <input type="email" placeholder="email" class="form-button"><br>
+
+            <input type="text" placeholder="Subject" class="form-button"> <br>
+            <input type="text" placeholder="Message" class="form-button"> <br>
+            <button class="form-button-send">Send Message</button> <br>
+          </form>
+        </div>
+      </div>
+
+        <div class="footer-icons-2">
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#https://www.linkedin.com/in/kavya-ramachandraiah-5648a323b"><i class="bx bxl-linkedin"></i></a>
+          <p class="last-line">Created by <span>Kavya Ramachandraiah</span> <i class='bx bxs-copyright'></i>2023 All right reserved</p>
+        </div>
+
+
+    </section>
+  </body>
+</html>
